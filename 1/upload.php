@@ -32,7 +32,7 @@ header("Content-Type: text/html; charset=UTF-8");
                     type: "POST",
                     data: formData,
                     success: function(ret) {
-						alert(JSON.stringify(ret));
+                        alert(JSON.stringify(ret));
                     }
                 });
             });
