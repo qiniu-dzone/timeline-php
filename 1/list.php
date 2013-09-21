@@ -12,7 +12,7 @@
             function makeItem(data) {
                 ret = '<div><b>'+data.user+'('+data.date+')</b><br>'+data.desc+'<div>';
                 if (data.mime.indexOf('image') >= 0) {
-	                ret += '<img src="'+data.url+'"/>'
+                    ret += '<a href="'+data.url+'" target="_blank"><img src="'+data.url+'?imageView/2/w/600"/></a>';
                 } else {
                     ret += '<a href="'+data.url+'">'+data.url+'</a>'
                 }
